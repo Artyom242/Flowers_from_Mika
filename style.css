@@ -17,7 +17,7 @@
 }
 @layer components{
     .container{
-        @apply max-w-[1230px]
+        @apply max-w-[1230px];
     }
 }
 
@@ -28,13 +28,25 @@ body {
     margin:0;
     overflow:hidden;
 	height: 600px;
+    position: relative;
 }
 canvas {
     padding:0;
     margin:0;
 }
 div.btnbg {
-    position:fixed;
+    position: fixed;
     left:0;
     top:0;
+    background-color:#0005;
 }
+
+.size120 {
+    font-size: calc(30px + 90 * (100vw /1280));
+}
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+.size60 {
+    font-size: calc(20px + 40 * (100vw /1280));
+    font-family: 'Caveat', cursive;
+}
+

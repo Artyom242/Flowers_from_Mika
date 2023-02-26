@@ -10,15 +10,50 @@
   <link rel="stylesheet" href="./css/null.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <title>Travel && Tailwind</title>
 
 </head>
-<body>
-    <canvas id="sakura"></canvas>
-<div class="btnbg">
+<body class="sliders">
+    <canvas id="sakura">
+    </canvas>
+    <div class="btnbg w-full h-full overflow-y-auto">
+        <div class=" h-full w-full ">
+            <div class="container pt-[150px] flex flex-col h-full">
+                <h1 class="bg-gradient-to-r text-transparent bg-clip-text from-[#ffec70] via-[#ffcb44] to-[#fb5607] size120 font-extrabold">Glad to see <br> <span class="pl-[170px] sm:pl-[100px]">you here!</span></h1>
+            <div class=" mx-auto items-end relative mt-[15%]">
+                <div class="text-left">
+                    <p class="text-base text-slate-200 pb-[10px]">нажми чтобы начать*</p>
+                </div>
+                <a href="#sliders"><button id="start" class="start text-[40px] text-white text-center py-[20px] sm:px-[100px] sm:py-[10px] px-[200px] border border-solid border-red-400 hover:bg-red-400 hover:text-black transition-colors ">start</button></a>
+                </div>
+        </div>
+    </div>
+
+    <div id="sliders" class="sliders slick-vertical h-full">
+        <section class="slide1  h-full container flex items-center justify-center">
+            <h2 class="bg-gradient-to-r text-transparent text-center bg-clip-text from-[#ffec70] to-[#ffcb44] size60 font-normal py-4">Приятного просмотра</h2>
+        </section>
+        <section class="slide2 h-full container flex items-center justify-center">
+            <img src="img/lx2nbSuD9GQ.jpg" alt="">
+        </section>
+    </div>
+
+    <script type="text/javascript">
+        const smoothLinks = document.querySelectorAll("a[href^='#']");
+    for (let smoothLink of smoothLinks) {
+        smoothLink.addEventListener("click", function (e) {
+            e.preventDefault();
+            const id = smoothLink.getAttribute("href");
+
+            document.querySelector(id).scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        });
+    };
+    </script>
 </div>
-
-
 
 
 
@@ -313,6 +348,10 @@ void main(void) {
     gl_FragColor.a = 1.0;
 }
 </script>
-<script src="/js/sakyra.js"></script>
+<script src="js/sakyra.js"></script>
+<script src="js/music.js"></script>
+<script src="js/scroll.js"></script>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
 </body>
 </html>
