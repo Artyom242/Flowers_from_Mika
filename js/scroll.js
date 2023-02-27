@@ -1,10 +1,16 @@
-var arr = document.querySelectorAll('slider');
-i=0;
-function scrolTo(elem){
-    window.scroll({
-        left:0,
-        top: elem.offsetTop,
-        behavior: "smooth"
-    })
+
+document.getElementById('start').onclick = slider;
+setInterval (autoSlide,1000);
+autoSlide();
+var top = 0;
+var timer; 
+
+function autoSlide(){
+    timer = setInterval (slider,1000);
 }
 
+function slider(){
+    var polosa = document.getElementById('sliders');
+    top = top.offsetTop;
+    polosa.style.top = top + 'px';
+}
