@@ -1,16 +1,19 @@
+const str = document.getElementById('start');
 
-document.getElementById('start').onclick = slider;
-setInterval (autoSlide,1000);
-autoSlide();
-var top = 0;
-var timer; 
-
-function autoSlide(){
-    timer = setInterval (slider,1000);
-}
-
-function slider(){
-    var polosa = document.getElementById('sliders');
-    top = top.offsetTop;
-    polosa.style.top = top + 'px';
-}
+str.addEventListener('click', ()=>{
+    var $jq = jQuery.noConflict();
+    $('.carusel').slick({   
+        arrows: false,
+        adaptiveHeight: true,
+        infinite: false,
+        autoplaySpeed: 2500,
+        speed: 500,
+        draggable: false,
+        swipe: false,
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        autoplay: true,
+        fade: true,
+        cssEase: 'linear'
+    });
+} )

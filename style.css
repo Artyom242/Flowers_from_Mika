@@ -46,8 +46,9 @@ div.btnbg {
 }
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
 .size60 {
-    font-size: calc(20px + 40 * (100vw /1280));
+    font-size: calc(25px + 55 * (100vw /1280));
     font-family: 'Caveat', cursive;
+    line-height: normal
 }
 
 
@@ -103,4 +104,65 @@ div.btnbg {
     100% {
         opacity: 0;
     }
+}
+
+
+
+.slick-slider{
+    max-width: 1230px;
+    margin: 0 auto;
+    
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{
+    display: flex;
+    align-items: center;
+}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+
+}
+
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+    align-items: flex-start;
+    justify-self: center;
+}
+/* Слайд */
+.slick-slide{
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{
+    
+}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+    left: 0;
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+    right: 0;
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{
+    display: none;
+}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{
 }
