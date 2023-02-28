@@ -1,4 +1,4 @@
-const str = document.getElementById('start');
+/*const str = document.getElementById('start');
 
 str.addEventListener('click', ()=>{
     var $jq = jQuery.noConflict();
@@ -16,4 +16,25 @@ str.addEventListener('click', ()=>{
         fade: true,
         cssEase: 'linear'
     });
+} )
+*/
+
+
+const str = document.getElementById('start');
+
+str.addEventListener('click', ()=>{
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items: 1,
+            loop: false,
+            mouseDrag: false,
+            touchDrag: false,
+            pullDrag: false,
+            rewind: true,
+            autoplay: true,
+            margin: 0,
+            smartSpeed: 600,
+            autoplayTimeout: 3100,
+          });
+      });
 } )

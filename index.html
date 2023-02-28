@@ -11,6 +11,9 @@
   <!-- Добавляем slick -->
   <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick-theme.css"/>
+  <!-- Добавляем owl -->
+  <link rel="stylesheet" href="./css/owl.carousel.css">
+<link rel="stylesheet" href="./css/owl.carousel.min.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +36,7 @@
     <div id="st" class="btnbg w-full h-full">
         <div class=" h-full w-full ">
             <div class="container pt-[150px] flex flex-col h-full">
-                <h1 class="bg-gradient-to-r text-transparent bg-clip-text from-[#ffec70] sm:via-[#ffcb44] via-[rgb(231,111,56)] sm:to-[#e76f38] to-[#e76f38] size120 font-extrabold">Glad to see <br> <span class="pl-[170px] sm:pl-[100px]">you here!</span></h1>
+                <h1 class="bg-gradient-to-r text-transparent bg-clip-text from-[#ffec70] sm:via-[#ffcb44] via-[rgb(231,111,56)] sm:to-[#e76f38] to-[#e76f38] size120 font-extrabold">Glad to see <br> <span class="pl-[170px] sm:pl-[90px]">you here!</span></h1>
             <div class=" mx-auto items-end relative mt-[15%]">
                 <div class="text-left">
                     <p class="text-base text-slate-200 pb-[10px]">нажми чтобы начать*</p>
@@ -44,14 +47,14 @@
     </div>
 
     <section id="sliders" class="sliders slick-vertical ">
-        <div class="carusel h-[100vh] text-center">
+        <div class="owl-carousel h-[100vh] text-center">
             <div class=" h-[100vh] container flex items-center justify-center leading-[10]">
                 <h2 class=" bg-gradient-to-r text-transparent text-center bg-clip-text from-[#5ed9df] to-[#88cb1c] size60 font-normal">Приятного просмотра :)</h2>
             </div>
             <div class=" h-[100vh] container flex items-center justify-center">
                 <div class="flex items-center justify-center lg:flex-wrap ">
                     <h2 class=" bg-gradient-to-r p-2 lg:pb-[30px] text-transparent text-center bg-clip-text from-[#ff87c9] to-[#ffbe19] size60 font-normal">Весна...</h2>
-                    <img class="max-w-[70%]" src="img/s1200.jpg" alt="">
+                    <img class="max-w-[70%] sm:max-w-[90%]" src="img/s1200.jpg" alt="">
                 </div>
             </div>
             <div class=" h-[100vh] container flex items-center justify-center">
@@ -59,22 +62,27 @@
             </div>
             <div class=" h-[100vh] container flex items-center justify-center">
                 <div class="flex items-center justify-center lg:flex-wrap ">
-                    <img class="max-w-[70%]" src="img/siti.jpeg" alt="">
+                    <img class="max-w-[70%] sm:max-w-[90%]" src="img/siti.jpeg" alt="">
                 </div>
             </div>
             <div class=" h-[100vh] container flex items-center justify-center">
                 <div class="flex items-center justify-center lg:flex-wrap ">
-                    <img class="max-w-[70%]" src="img/crov.jpg" alt="">
+                    <img class="max-w-[70%] sm:max-w-[90%]" src="img/crov.jpg" alt="">
                 </div>
             </div>
             <div class=" h-[100vh] container flex items-center justify-center">
                 <div class="flex items-center justify-center lg:flex-wrap ">
-                    <img class="max-w-[70%]" src="img/sky.jpg" alt="">
+                    <img class="max-w-[70%] sm:max-w-[90%]" src="img/sky.jpg" alt="">
                 </div>
             </div>
             <div class=" h-[100vh] container flex items-center justify-center">
                 <div class="flex items-center justify-center lg:flex-wrap ">
-                    <img class="max-w-[70%]" src="img/ydachi.jpg" alt="">
+                    <img class="max-w-[70%] sm:max-w-[90%]" src="img/ydachi.jpg" alt="">
+                </div>
+            </div>
+            <div class=" h-[100vh] container flex items-center justify-center">
+                <div class="flex items-center justify-center lg:flex-wrap ">
+                    <img class="max-w-[70%] sm:max-w-[90%]" src="img/no_bydy.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -401,6 +409,10 @@ void main(void) {
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="node_modules/slick-carousel/slick/slick.min.js"></script>
-<script src="js/scroll.js"></script>d
+
+<script src="jquery.min.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
+
+<script src="js/scroll.js"></script>
 </body>
 </html>
