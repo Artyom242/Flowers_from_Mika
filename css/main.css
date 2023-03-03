@@ -535,8 +535,36 @@ h1,
   max-width: 1230px;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.bottom-\[120px\] {
+  bottom: 120px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.right-\[200px\] {
+  right: 200px;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 .mx-auto {
@@ -544,8 +572,24 @@ h1,
   margin-right: auto;
 }
 
+.mb-\[100px\] {
+  margin-bottom: 100px;
+}
+
+.ml-\[10px\] {
+  margin-left: 10px;
+}
+
 .mt-\[15\%\] {
   margin-top: 15%;
+}
+
+.mt-\[50px\] {
+  margin-top: 50px;
+}
+
+.mt-\[30px\] {
+  margin-top: 30px;
 }
 
 .block {
@@ -556,8 +600,16 @@ h1,
   display: flex;
 }
 
+.h-\[100\%\] {
+  height: 100%;
+}
+
 .h-\[100vh\] {
   height: 100vh;
+}
+
+.h-\[130px\] {
+  height: 130px;
 }
 
 .h-full {
@@ -568,8 +620,24 @@ h1,
   width: 100%;
 }
 
+.max-w-5xl {
+  max-width: 64rem;
+}
+
+.max-w-\[100\%\] {
+  max-width: 100%;
+}
+
+.max-w-\[50px\] {
+  max-width: 50px;
+}
+
 .max-w-\[70\%\] {
   max-width: 70%;
+}
+
+.max-w-\[700px\] {
+  max-width: 700px;
 }
 
 .flex-col {
@@ -588,8 +656,28 @@ h1,
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
 .overflow-y-auto {
   overflow-y: auto;
+}
+
+.whitespace-pre-wrap {
+  white-space: pre-wrap;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .border {
@@ -605,6 +693,15 @@ h1,
   border-color: rgb(248 113 113 / var(--tw-border-opacity));
 }
 
+.bg-\[\#000000ac\] {
+  background-color: #000000ac;
+}
+
+.bg-\[\#222222\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 34 34 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -618,6 +715,12 @@ h1,
 .from-\[\#f7e156\] {
   --tw-gradient-from: #f7e156;
   --tw-gradient-to: rgb(247 225 86 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-\[\#ff6c6c\] {
+  --tw-gradient-from: #ff6c6c;
+  --tw-gradient-to: rgb(255 108 108 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -654,6 +757,14 @@ h1,
   --tw-gradient-to: #ffbe19;
 }
 
+.to-\[\#ffffff\] {
+  --tw-gradient-to: #ffffff;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
@@ -673,9 +784,18 @@ h1,
   padding-bottom: 1rem;
 }
 
+.py-\[200px\] {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .py-\[20px\] {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
 }
 
 .pb-\[10px\] {
@@ -684,6 +804,10 @@ h1,
 
 .pl-\[170px\] {
   padding-left: 170px;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .pt-\[150px\] {
@@ -707,6 +831,11 @@ h1,
   line-height: 1.5rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-extrabold {
   font-weight: 800;
 }
@@ -719,9 +848,29 @@ h1,
   line-height: 10;
 }
 
+.text-\[\#fffa96\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 250 150 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-cyan-400 {
+  --tw-text-opacity: 1;
+  color: rgb(34 211 238 / var(--tw-text-opacity));
+}
+
 .text-slate-200 {
   --tw-text-opacity: 1;
   color: rgb(226 232 240 / var(--tw-text-opacity));
+}
+
+.text-slate-500 {
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
 }
 
 .text-transparent {
@@ -731,6 +880,21 @@ h1,
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-yellow-100 {
+  --tw-text-opacity: 1;
+  color: rgb(254 249 195 / var(--tw-text-opacity));
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .transition-colors {
@@ -769,6 +933,24 @@ div.btnbg {
   font-size: calc(25px + 55 * (100vw /1280));
   font-family: 'Caveat', cursive;
   line-height: normal
+}
+
+.size40 {
+  font-size: calc(20px + 15 * (100vw /1280));
+  font-family: 'Caveat', cursive;
+  line-height: normal
+}
+
+.size15 {
+  font-size: calc(16px + 15 * (100vw /1280));
+  font-family: 'IBM', sans-serif;
+  line-height: normal;
+}
+
+.size_footer {
+  font-size: calc(10px + 5 * (100vw /1280));
+  font-family: 'IBM', sans-serif;
+  line-height: normal;
 }
 
 /*---------preloader----------------*/
@@ -825,6 +1007,68 @@ div.btnbg {
   }
 }
 
+.gallery {
+  --g: 8px;
+  /* the gap */
+  --s: 400px;
+  /* the size */
+  display: grid;
+  border-radius: 50%;
+}
+
+.gallery > img {
+  grid-area: 1/1;
+  width: 600px;
+  aspect-ratio: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  transform: translate(var(--_x,0),var(--_y,0));
+  cursor: pointer;
+  z-index: 0;
+  transition: .3s, z-index 0s .3s;
+}
+
+.gallery img:hover {
+  --_i: 1;
+  z-index: 1;
+  transition: transform .2s, z-index 0s, -webkit-clip-path .3s .2s;
+  transition: transform .2s, clip-path .3s .2s, z-index 0s;
+  transition: transform .2s, clip-path .3s .2s, z-index 0s, -webkit-clip-path .3s .2s;
+}
+
+.gallery:hover img {
+  transform: translate(0,0);
+}
+
+.gallery > img:nth-child(1) {
+  -webkit-clip-path: polygon(50% 50%,calc(50%*var(--_i,0)) calc(120%*var(--_i,0)),0 calc(100%*var(--_i,0)),0 0,100% 0,100% calc(100%*var(--_i,0)),calc(100% - 50%*var(--_i,0)) calc(120%*var(--_i,0)));
+          clip-path: polygon(50% 50%,calc(50%*var(--_i,0)) calc(120%*var(--_i,0)),0 calc(100%*var(--_i,0)),0 0,100% 0,100% calc(100%*var(--_i,0)),calc(100% - 50%*var(--_i,0)) calc(120%*var(--_i,0)));
+  --_y: calc(-1*var(--g))
+  
+}
+
+.gallery > img:nth-child(2) {
+  -webkit-clip-path: polygon(50% 50%,calc(100% - 120%*var(--_i,0)) calc(50%*var(--_i,0)),calc(100% - 100%*var(--_i,0)) 0,100% 0,100% 100%,calc(100% - 100%*var(--_i,0)) 100%,calc(100% - 120%*var(--_i,0)) calc(100% - 50%*var(--_i,0)));
+          clip-path: polygon(50% 50%,calc(100% - 120%*var(--_i,0)) calc(50%*var(--_i,0)),calc(100% - 100%*var(--_i,0)) 0,100% 0,100% 100%,calc(100% - 100%*var(--_i,0)) 100%,calc(100% - 120%*var(--_i,0)) calc(100% - 50%*var(--_i,0)));
+  --_x: var(--g)
+  
+}
+
+.gallery > img:nth-child(3) {
+  -webkit-clip-path: polygon(50% 50%,calc(100% - 50%*var(--_i,0)) calc(100% - 120%*var(--_i,0)),100% calc(100% - 120%*var(--_i,0)),100% 100%,0 100%,0 calc(100% - 100%*var(--_i,0)),calc(50%*var(--_i,0)) calc(100% - 120%*var(--_i,0)));
+          clip-path: polygon(50% 50%,calc(100% - 50%*var(--_i,0)) calc(100% - 120%*var(--_i,0)),100% calc(100% - 120%*var(--_i,0)),100% 100%,0 100%,0 calc(100% - 100%*var(--_i,0)),calc(50%*var(--_i,0)) calc(100% - 120%*var(--_i,0)));
+  --_y: var(--g)
+  
+}
+
+.gallery > img:nth-child(4) {
+  -webkit-clip-path: polygon(50% 50%,calc(120%*var(--_i,0)) calc(50%*var(--_i,0)),calc(100%*var(--_i,0)) 0,0 0,0 100%,calc(100%*var(--_i,0)) 100%,calc(120%*var(--_i,0)) calc(100% - 50%*var(--_i,0)));
+          clip-path: polygon(50% 50%,calc(120%*var(--_i,0)) calc(50%*var(--_i,0)),calc(100%*var(--_i,0)) 0,0 0,0 100%,calc(100%*var(--_i,0)) 100%,calc(120%*var(--_i,0)) calc(100% - 50%*var(--_i,0)));
+  --_x: calc(-1*var(--g))
+  
+}
+
 .hover\:bg-red-400:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(248 113 113 / var(--tw-bg-opacity));
@@ -833,6 +1077,18 @@ div.btnbg {
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.hover\:text-opacity-30:hover {
+  --tw-text-opacity: 0.3;
+}
+
+.hover\:transition:hover {
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 @media (max-width: 1024px) {
@@ -869,13 +1125,11 @@ div.btnbg {
     padding-bottom: 10px;
   }
 
-  .sm\:pl-\[100px\] {
-    padding-left: 100px;
+  .sm\:pl-\[10px\] {
+    padding-left: 10px;
   }
 
   .sm\:pl-\[90px\] {
     padding-left: 90px;
   }
 }
-
-
