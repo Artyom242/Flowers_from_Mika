@@ -19,9 +19,9 @@ str.addEventListener('click', ()=>{
             rewind: false,
         });
         owl.on('changed.owl.carousel', function(event) {
-            if(event.page.index==1){
+            if(event.page.index==7){
                 const el = document.getElementById('block-text');
-                setTimeout(()=>el.scrollIntoView({block: "center", inline: "center", behavior:'smooth'}),500)
+                setTimeout(()=>el.scrollIntoView({block: "center", inline: "center", behavior:'smooth'}),5000)
                 
                 function writeTextByJS(id, text, speed) {
                     var ele = document.getElementById(id),
