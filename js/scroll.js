@@ -22,7 +22,6 @@ str.addEventListener('click', ()=>{
         owl.on('changed.owl.carousel', function(event) {
             if(event.page.index==7){
                 const el = document.getElementById('block-text');
-                const grid = document.getElementById('grid');
                 const text_11 = document.getElementById('text-11');
                 const text_22 = document.getElementById('text-22');
                 const text_33 = document.getElementById('text-33');
@@ -37,7 +36,6 @@ str.addEventListener('click', ()=>{
 
                 if(block_t.classList.contains('active')){
                     setTimeout(()=>el.scrollIntoView({block: "center", inline: "center", behavior:'smooth'}),4800)
-                    setTimeout(()=>grid.scrollIntoView({block: "center", inline: "center", behavior:'smooth'}),41000)
                     setTimeout(()=>text_11.scrollIntoView({block: "center", inline: "center", behavior:'smooth'}),53000)
                     setTimeout(()=>text_22.scrollIntoView({block: "center", inline: "center", behavior:'smooth'}),54500)
                     setTimeout(()=>text_33.scrollIntoView({block: "center", inline: "center", behavior:'smooth'}),56900)
@@ -73,14 +71,3 @@ str.addEventListener('click', ()=>{
         })
     });
 } )
-
-/*
-// функ-я скролла к другому боку
-function ScrollToo(block){
-    window.scroll({
-        left:0,
-        top: block.offsetTop,
-        behavior:'smooth',
-    });
-}
-*/
