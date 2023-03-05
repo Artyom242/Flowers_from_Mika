@@ -563,6 +563,10 @@ h1,
   z-index: 10;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -612,8 +616,20 @@ h1,
   height: 100%;
 }
 
+.max-h-\[500px\] {
+  max-height: 500px;
+}
+
 .w-full {
   width: 100%;
+}
+
+.w-\[500px\] {
+  width: 500px;
+}
+
+.w-\[700px\] {
+  width: 700px;
 }
 
 .max-w-5xl {
@@ -1124,5 +1140,25 @@ div.btnbg {
 
   .sm\:pl-\[90px\] {
     padding-left: 90px;
+  }
+
+  .sm\:pt-\[100px\] {
+    padding-top: 100px;
+  }
+
+  .sm\:pt-\[10vh\] {
+    padding-top: 10vh;
+  }
+
+  .sm\:pt-\[20vh\] {
+    padding-top: 20vh;
+  }
+
+  .sm\:pt-\[15vh\] {
+    padding-top: 15vh;
+  }
+
+  .sm\:pt-\[5vh\] {
+    padding-top: 5vh;
   }
 }
