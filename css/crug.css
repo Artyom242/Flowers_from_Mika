@@ -74,6 +74,11 @@
         height: 200px;
     }
 }
+@media (max-width:500px) {
+    .containers .card:before{
+        border: 5px solid #fff;
+    }
+}
 
 
   .containers .card:nth-of-type(1)::before {

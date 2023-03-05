@@ -21,36 +21,14 @@ str.addEventListener('click', ()=>{
         });
         owl.on('changed.owl.carousel', function(event) {
             if(event.page.index==7){
-                const el = document.getElementById('block-text');
                 const foot = document.getElementById('footer');
-
                 block_t.classList.add('active');
-
                 if(block_t.classList.contains('active')){
                     setTimeout(()=>el.scrollIntoView({block: "center", inline: "center", behavior:'smooth'}),4800)
                 };
-
                 if(foot.classList.contains('footer')){
                     setTimeout(()=>foot.scrollIntoView({block: "center", inline: "center", behavior:'smooth'}),76000)
                 };
-
-                    function writeTextByJS(id, text, speed) {
-                        var ele = document.getElementById(id),
-                            txt = text.join("").split("");
-                        var interval = setInterval(function () {
-                            if (!txt[0]) {
-                                return clearInterval(interval);
-                            };
-                            ele.innerHTML += txt.shift();
-                        }, speed != undefined ? speed : 90);
-                        return false;
-                    };
-                    writeTextByJS(
-                        "demo",
-                        [
-                            "В этот прекрасный радостный весенний день поздравляю тебя с 8 марта🌷🌷🌷! Желаю солнечного настроения 🌤, любви❤️, вдохновения🏞, радости и благополучия💃. Пусть каждый новый день расцветает ароматными нежными цветами, пусть тебя окружают добрые, отзывчивые люди. С праздником 🌸🌺🌹💐🌼!",
-                        ]
-                    )
             }
         })
     });
