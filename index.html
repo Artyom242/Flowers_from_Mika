@@ -90,13 +90,57 @@
         </div>
     </div>
 
-<div id="crug" class="container h-[100vh] flex flex-col items-center justify-center">
-    <div class="gallery">
+<div id="crug" class="crug container h-[100vh] flex flex-col items-center justify-center">
+    <div class="containers">
+        <div class="card">
+        <div class="image image1"></div>
+            <div class="info">
+                <img src="img/cr1.jpg" alt="">    
+            </div>
+        </div>
+        <div class="card">
+          <div class="image image2"></div>
+          <div class="info">
+            <img src="img/cr2.jpg" alt="">    
+        </div>
+        </div>
+        <div class="card">
+          <div class="image image3"></div>
+          <div class="info">
+            <img src="img/cr3.jpg" alt="">    
+        </div>
+        </div>
+        <div class="card">
+            <div class="image image3"></div>
+            <div class="info">
+              <img src="img/cr4.jpg" alt="">    
+          </div>
+          </div>
+      </div>
+      <svg>
+        <filter id="wavy1">
+          <feturbulence x="0" y="0" baseFrequency="0.2" numOctaves="5" seed="1"></feturbulence>
+          <feDisplacementMap in="SourceGraphic" scale="20" />
+        </filter>
+      </svg>
+      <svg>
+        <filter id="wavy2">
+          <feturbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="1"></feturbulence>
+          <feDisplacementMap in="SourceGraphic" scale="20" />
+        </filter>
+      </svg>
+      <svg>
+        <filter id="wavy3">
+          <feturbulence x="0" y="0" baseFrequency="0.1" numOctaves="5" seed="1"></feturbulence>
+          <feDisplacementMap in="SourceGraphic" scale="20" />
+        </filter>
+      </svg>
+    <!--<div class="gallery">
         <img src="img/cr1.jpg" alt="">
         <img src="img/cr2.jpg" alt="">
         <img src="img/cr3.jpg" alt="">
         <img src="img/cr4.jpg" alt="">
-      </div>
+      </div>-->
       <p class="text-slate-200 text-base mt-[30px]">*Нажимай на картинки</p>
 </div>
 
@@ -514,10 +558,7 @@ void main(void) {
 <script src="js/sakyra.js"></script>
 <script src="js/preload.js"></script>
 <script src="js/grid.js"></script>
-
-
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/text.js"></script>
 
 <script src="./js/owl.carousel.min.js"></script>
 
