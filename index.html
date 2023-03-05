@@ -163,8 +163,8 @@
     <footer id="footer" class="footer relative  pt-8 pb-8  h-[100vh]">
         <div class="container text-slate-500 flex flex-col justify-between relative h-[100%] size_footer">
             <h2 class="mb-[100px] bg-gradient-to-r text-transparent bg-clip-text from-[#ff6c6c]  to-[#ffffff] size120 font-extrabold">С 8 Марта!</span></h2>
-            <p class="size14 mb-[100px] font-normal">Маленьное послесловие: <br><br> Спасибо, что зашли сюда) Этот сайт готовился как минимум не одну ночь и вообще был под вопросом. 
-            <br><br> PS: Извините, Слава попросил рекламу)</p>
+            <p class="size14 mb-[100px] text-[#eaa967c9] font-normal">Маленьное послесловие: <br><br> Спасибо, что зашли сюда) Всего вам наилучшего 
+            </p>
             <div class="flex flex-wrap justify-around gap-4 items-center max-w-[100%] relative z-10 bottom-0 ">
                 <p class="left-0">I am located here <a class="text-cyan-400 hover:text-opacity-30 hover:transition" href="https://t.me/Kot_Mika">Telegram</a></p>
                 <div class="flex items-center right-[200px] z-10">
@@ -192,6 +192,29 @@
             
         });
     };
+    </script>
+     <script type="text/javascript">
+        $(document).ready(function() 
+    {
+    var start = document.getElementById("start");
+
+    var playing = false;
+    var player = new Audio('music/SLAVA_MARLOW_-_Rasstrelyajj_menya_74440731.mp3');
+    player.preload = "auto";
+    
+    start.addEventListener('click',()=>{
+        playPause()
+    });
+    
+    function playPause() {
+        if(playing) {
+        
+        } else {
+        player.play();
+        }
+        playing = !playing;
+    }
+});
     </script>
 </div>
 
@@ -489,7 +512,6 @@ void main(void) {
 }
 </script>
 <script src="js/sakyra.js"></script>
-<script src="js/music.js"></script>
 <script src="js/preload.js"></script>
 <script src="js/grid.js"></script>
 
