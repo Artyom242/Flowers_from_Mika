@@ -22,7 +22,6 @@ str.addEventListener('click', ()=>{
         owl.on('changed.owl.carousel', function(event) {
             if(event.page.index==7){
                 const el = document.getElementById('block-text');
-                const crug = document.getElementById('crug');
                 const grid = document.getElementById('grid');
                 const text_11 = document.getElementById('text-11');
                 const text_22 = document.getElementById('text-22');
@@ -38,7 +37,6 @@ str.addEventListener('click', ()=>{
 
                 if(block_t.classList.contains('active')){
                     setTimeout(()=>el.scrollIntoView({block: "center", inline: "center", behavior:'smooth'}),4800)
-                    setTimeout(()=>crug.scrollIntoView({block: "center", inline: "center", behavior:'smooth'}),29500)
                     setTimeout(()=>grid.scrollIntoView({block: "center", inline: "center", behavior:'smooth'}),41000)
                     setTimeout(()=>text_11.scrollIntoView({block: "center", inline: "center", behavior:'smooth'}),53000)
                     setTimeout(()=>text_22.scrollIntoView({block: "center", inline: "center", behavior:'smooth'}),54500)
