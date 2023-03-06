@@ -993,11 +993,6 @@ div.btnbg {
   line-height: normal
 }
 
-.size40_footer {
-  font-size: calc(20px + 20 * (100vw /1280));
-  line-height: normal
-}
-
 .size15 {
   font-size: calc(16px + 15 * (100vw /1280));
   font-family: 'IBM', sans-serif;

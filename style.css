@@ -55,10 +55,6 @@ div.btnbg {
     font-family: 'Caveat', cursive;
     line-height: normal
 }
-.size40_footer {
-    font-size: calc(20px + 20 * (100vw /1280));
-    line-height: normal
-}
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap');
 .size15 {
     font-size: calc(16px + 15 * (100vw /1280));
